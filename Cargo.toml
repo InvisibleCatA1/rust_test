@@ -1,0 +1,16 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+build = "build.rs"
+edition = "2021"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[package.metadata.winres]
+OriginalFilename = "lbs_hack121.exe"
+LegalCopyright = "Copyright © 2022"
